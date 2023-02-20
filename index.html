@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calc</title>
+  </head>
+  <body>
+    <div class="wrapper-slider">
+      <div class="storage">
+        <p>Storage: <span class="slider-status">0</span>GB</p>
+        <div class="slider">
+          <div class="track"></div>
+          <div class="handle"></div>
+        </div>
+      </div>
+      <div class="transfer">
+        <p>Transfer: <span class="slider-status">0</span>GB</p>
+        <div class="slider">
+          <div class="track"></div>
+          <div class="handle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-chart">
+      <canvas id="chart" width="400" height="300"></canvas>
+      <div class="type-disc radio-wrapper">
+        <div class="radio-select"><input type="radio" name="type-disc" id="HDD" value="HDD" checked />HDD</div>
+        <div class="radio-select"><input type="radio" name="type-disc" id="SSD" value="SSD" />SSD</div>
+      </div>
+      <div class="count-thurd radio-wrapper">
+        <div class="radio-select"><input type="radio" name="count-thurd" id="Multi" value="Multi" checked />Multi</div>
+        <div class="radio-select"><input type="radio" name="count-thurd" id="Single" value="Single" />Single</div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
